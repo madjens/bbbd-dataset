@@ -6,6 +6,14 @@ catch ME
     return;
 end
 
+try
+    disp('Running bbbd_generate_stimuli_questionnaire.m...');
+    run('bbbd_generate_stimuli_questionnaire.m');
+catch ME
+    disp(['Error in bbbd_generate_stimuli_questionnaire: ' ME.message]);
+    return;
+end
+
 disp('Experiments 1, 2, 3 executing...');
 
 try
@@ -43,6 +51,14 @@ end
 disp('Experiments 1, 2, 3 executed successfully.');
 
 disp('Experiments 4, 5 executing...');
+
+try
+    disp('Running bbbd_build_int_metadata.m...');
+    run('bbbd_build_int_metadata.m');
+catch ME
+    disp(['Error in bbbd_build_int_metadata: ' ME.message]);
+    return;
+end
 
 try
     disp('Running bbbd_45_raw_eye_heart.m...');

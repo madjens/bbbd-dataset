@@ -1,0 +1,534 @@
+{
+  "questions": {
+    "stim1": {
+      "q1": "What is an example of targeted eradication of mosquitoes?",
+      "q2": "How many types of mosquitoes exist and do all of them bite?",
+      "q3": "Aedes Aegypti is the primary vector for:",
+      "q4": "Anopheles is the primary vector for:",
+      "q5": "How does the self-limiting gene in A. Aegypti work?",
+      "q6": "How could we limit transmission of malaria?",
+      "q7": "What does the Walbachia exactly do?",
+      "q8": "Which method is more appropriate if your intention is to kill a whole mosquito species?",
+      "q9": "Which method is more appropriate if you want to limit virus transmission?",
+      "q10": "What could be a side effect of the Walbachia method and why?",
+      "q11": "What would happen if all mosquitoes disappeared?",
+      "q12": "What is an example of a role that mosquitoes play in ecosystems?"
+    },
+    "stim2": {
+      "q1": "How many people have ever lived and to what is it more/less comparable?",
+      "q2": "Why is the total number of ancestors much smaller than the actual math tells us?",
+      "q3": "How much of the human DNA is coded into proteins?",
+      "q4": "How would you estimate how much time has passed since the beginning of humanity?",
+      "q5": "Do humans have a higher genetic variance than i.e. group of zebras that live together?",
+      "q6": "How big is the DNA?",
+      "q7": "What does SNPs stand for and how frequent do they happen?",
+      "q8": "What is the most adequate tool to detect how close or distant related we are from each other?",
+      "q9": "What is the most adequate tool to detect the geographical origin of your ancestors?",
+      "q10": "What is the most adequate tool to detect from which Homo Sapiens lineage we originated from?",
+      "q11": "From whom do you descend originally and how is it possible to find that out?",
+      "q12": "How can SNPs be useful?"
+    },
+    "stim3": {
+      "q1": "What is the amount of energy transferred by a force called?",
+      "q2": "Which of the following affect the work done on an object? ",
+      "q3": "If a moving object feels a force in the negative direction while moving in the negative direction, the work done will be:",
+      "q4": "A person pushes a box along a horizontal floor at a constant speed. The net work done on the box is:",
+      "q5": "An ice skater pushes a sled on a frictionless frozen pond starting from rest and moving until the velocity of the sled is 4 m/s. To get the sled to move 8 m/s after moving the same distance, the skater would have to: ",
+      "q6": "A forklift moves a crate horizontally from one side of the warehouse to the other while driving slowly and steadily. During this process, is the work done by the forklift:",
+      "q7": "A truck pushes a car a distance d with some force F. Suppose the truck instead pushes the same car the same distance but with twice the force. Which is true of the work done by the truck with the greater force?",
+      "q8": "Suppose that the net work done on an object is zero. Which of the following is possible?",
+      "q9": "Which of the following are correct? If the net work done on an object is positive, then...",
+      "q10": "Which of the following are correct? If the net work done on an object is negative, then...",
+      "q11": "What is the work done by a 2N force acting in the positive direction on a 2kg object that moves 1 meter in the negative direction while moving with constant speed 3m/s?",
+      "q12": "What is the kinetic energy of a 2kg object after moving 1 meter in the negative direction with constant speed 3m/s while acted on by a 2N force in the positive direction?"
+    },
+    "stim4": {
+      "q1": "Why is a non-conductive material placed between two pieces of metal (capacitor)?",
+      "q2": "What changes when the battery is taken out of the circuit?",
+      "q3": "Mark the incorrect statement:",
+      "q4": "What happens to the dielectric molecules in between the capacitor plates?",
+      "q5": "How does the dielectric increase the capacitance in a circuit w/o a battery?",
+      "q6": "What happens when a dielectric is inserted in the capacitor which is in a circuit with a battery?",
+      "q7": "What is the purpose of a battery in a circuit with a capacitor?",
+      "q8": "Consider 2 different capacitors where both have the same charge Q, but one has a bigger voltage V. How do their capacitances compare?",
+      "q9": "Consider 2 different capacitors where both have the same voltage V, but one has a smaller charge Q. How do their capacitances compare?",
+      "q10": "Why is the dielectric constant always >1?",
+      "q11": "Which of the following changes the dielectric constant k?",
+      "q12": "Which of the following changes the capacitance?"
+    },
+    "stim5": {
+      "q1": "What do you need to calculate the mass of our planet?",
+      "q2": "What does a larger distance between a planet and moon imply about the planet's mass (all other things being the same)?",
+      "q3": "What does a larger gravitation imply about the planet's mass (all other things being the same)?",
+      "q4": "Which method is the most suitable to calculate the distance between the sun and our planet?",
+      "q5": "Which method is the most suitable to calculate the distance between a satellite and earth?",
+      "q6": "Which method is the most suitable to calculate how far away a burning army tank is from the background mountain range?",
+      "q7": "What do you need to calculate the distance between an object in the sky and earth?",
+      "q8": "As the size of an object increases, the angular measurement needed to determine its distance...",
+      "q9": "As the size of a star increases, the angular measurement needed in the stellar parallax technique...",
+      "q10": "Which method is more suitable to calculate the distance between our planet and a star not far away?",
+      "q11": "How is it possible to calculate the distance between our planet and stars using the stellar parallax method?",
+      "q12": "Which method is more suitable to calculate the distance between our planet and stars that are light years away?"
+    },
+    "stim6": {
+      "q1": "Which statement is incorrect?",
+      "q2": "What can alter the reaction rate of an enzyme?",
+      "q3": "If you have an enzyme with a pH optimum of 9 and it's in a solution with a pH of 12 what will happen?",
+      "q4": "If you have an enzyme with a temperature optimum of 70 F and the room temperature is at 80 F what will happen?",
+      "q5": "If you have two containers, both with a substrate concentration of 10 uM, but container 1 has an enzyme concentration of 10 uM and container 2 has an enzyme concentration of 14 uM, what will be the reaction rate?",
+      "q6": "If you have two containers, both with a substrate concentration of 10 uM, but container 1 has an enzyme concentration of 10 uM and container 2 has an enzyme concentration of 6 uM, what will be the reaction rate?",
+      "q7": "What of the following describes how an enzyme facilitates a reaction?",
+      "q8": "How would a graph look like if on the x-axis you have increasing substrate concentration and on the y-axis you have increasing reaction rate (enzyme concentration stays constant)?",
+      "q9": "What happens when a molecule goes from an alcohol to an aldehyde?",
+      "q10": "What is the value of the activation energy in the example shown in the graph?",
+      "q11": "What could be a value for the activation energy if an enzyme would be involved in the reaction (use the graph)?",
+      "q12": "Why is the reaction rate the same when the enzyme concentration is the same or higher than the substrate concentration?"
+    }
+  },
+  "answers": {
+    "stim1": {
+      "q1": {
+        "option1": "Genetically modifying mosquitoes",
+        "option2": "Eliminating harmful species of mosquitoes in an ecosystem",
+        "option3": "Eliminating mosquitoes only from ecosystems where there are harmful effects on humans",
+        "option4": "Usage of DDT"
+      },
+      "q2": {
+        "option1": "Around 3000 mosquito species and a couple of hundred bite",
+        "option2": "Around 3000 mosquito species and most of them bite",
+        "option3": "Around 30.000 mosquito species and a couple of hundred bite",
+        "option4": "Around 30.000 mosquito species and most of them bite"
+      },
+      "q3": {
+        "option1": "Dengue",
+        "option2": "Yellow fever",
+        "option3": "Chickengunya",
+        "option4": "Malaria"
+      },
+      "q4": {
+        "option1": "Malaria",
+        "option2": "Dengue",
+        "option3": "Yellow fever",
+        "option4": "Zika"
+      },
+      "q5": {
+        "option1": "Genetically modified males are released and by mating with females in the wild they pass on their modified genes to their offspring which subsequently die",
+        "option2": "Genetically modified males are released and by mating with females in the wild they pass on their modified genes to their offspring, which subsequently are sterile",
+        "option3": "Genetically modified females are released and by mating with males in the wild they pass on their modified genes not only to their offspring but also to the males, which subsequently die",
+        "option4": "Genetically modified females are released and by mating with males in the wild they pass on their modified genes to their offspring, which subsequently become sterile"
+      },
+      "q6": {
+        "option1": "Genetically modified genes in mosquitoes, that kill the malaria parasite inside them, which leads to limited virus transmission and additionally those genes would be passed on to the next generation",
+        "option2": "Genetically modified females can kill the malaria parasite, which leads to limited malaria transmission and this feature can be passed on to their offspring which are subsequently sterile",
+        "option3": "Genetically modified males are released and by mating with females in the wild they pass on their modified genes to their offspring, which subsequently die",
+        "option4": "Genetically modified females are released and by mating with males in the wild, they pass on their modified genes not only to their offspring but also to the males, which subsequently die"
+      },
+      "q7": {
+        "option1": "It's a bacteria that represses the dengue virus growth in mosquitoes",
+        "option2": "It's a bacterium that represses the malaria virus growth in mosquitoes",
+        "option3": "It's a virus that represses the dengue virus growth in mosquitoes",
+        "option4": "It's a fungus that represses the malaria virus growth in mosquitoes"
+      },
+      "q8": {
+        "option1": "Self-limiting gene A. Aegypti method",
+        "option2": "Modified genes in Anopheles method",
+        "option3": "Walbachia Anopheles method",
+        "option4": "Self-limiting genes Anopheles method"
+      },
+      "q9": {
+        "option1": "Walbachia Anopheles method",
+        "option2": "Modified genes in Anopheles method",
+        "option3": "Self-limiting genes Anopheles method",
+        "option4": "Self-limiting gene A. Aegypti method"
+      },
+      "q10": {
+        "option1": "By mutating rapidly, the virus gets resistant against the bacterium",
+        "option2": "The virus coexists with the bacteria through symbiosis",
+        "option3": "By mutating rapidly, the bacterium gets resistant against the virus",
+        "option4": "There are no side effects"
+      },
+      "q11": {
+        "option1": "Scientists are not in agreement as to whether there would be broad scale damage to our planet",
+        "option2": "This would result in permanent damage to many ecosystems",
+        "option3": "Ecosystems would adjust to accommodate the loss of mosquitoes",
+        "option4": "The answer depends on how slowly the mosquitoes disappear"
+      },
+      "q12": {
+        "option1": "They can be carriers of several types of viruses",
+        "option2": "They are a large part of the biomass",
+        "option3": "They pollinate certain plants",
+        "option4": "They are a major food source for birds"
+      }
+    },
+    "stim2": {
+      "q1": {
+        "option1": "107 billion people have ever lived, which is more than the number of stars present in the milky way",
+        "option2": "107 billion people have ever lived, which is more than the number of sand grains in Australia",
+        "option3": "100 billion people have ever lived, which is more than the number of atoms in a pound of gold",
+        "option4": "100 billion people have ever lived, which is more than the number of grams in the sun"
+      },
+      "q2": {
+        "option1": "Because of inbreeding",
+        "option2": "Because every human shares an ancestor around 3000 years ago",
+        "option3": "Because we all come from the same lineage, originated from Africa",
+        "option4": "Because humanity started with a big population"
+      },
+      "q3": {
+        "option1": 0.02,
+        "option2": 0.8,
+        "option3": 0.98,
+        "option4": 0.3
+      },
+      "q4": {
+        "option1": "Locate and identify genetic changes in DNA i.e. mutations",
+        "option2": "Locate and identify changes in cells from the mother that are passed to every offspring",
+        "option3": "By doing whole genome sequencing",
+        "option4": "It's not possible because the human DNA has mutated too much"
+      },
+      "q5": {
+        "option1": "No, because the original population was small",
+        "option2": "Of course, just look at the different looks that people have, which is directly correlated to their genetics",
+        "option3": "Yes, because our chromosomes recombine during reproduction",
+        "option4": "No, because our chromosomes don't recombine during reproduction"
+      },
+      "q6": {
+        "option1": "46 chromosomes and 6 billion base pairs",
+        "option2": "46 chromosomes and 4 billion base pairs",
+        "option3": "24 chromosomes and 6 billion base pairs",
+        "option4": "24 Chromosomes and 4 billion base pairs"
+      },
+      "q7": {
+        "option1": "Single Nucleotide Polymorphism and 1/1000 base pairs",
+        "option2": "Single Nucleotide Polymorphism and 1/100 base pairs",
+        "option3": "Single Nuclear Polymorphism and 1/100 base pairs",
+        "option4": "Single Nuclear Polymorphism and 1/1000 base pairs"
+      },
+      "q8": {
+        "option1": "Genetic changes in general",
+        "option2": "Mutations",
+        "option3": "SNPs",
+        "option4": "Mitochondrial DNA"
+      },
+      "q9": {
+        "option1": "SNPs",
+        "option2": "Mutations",
+        "option3": "Genetically changes in general",
+        "option4": "Mitochondrial DNA"
+      },
+      "q10": {
+        "option1": "Mitochondrial DNA",
+        "option2": "SNPs",
+        "option3": "Mutations",
+        "option4": "Genetically changes in general"
+      },
+      "q11": {
+        "option1": "Mitochondrial Eve, because the mitochondria doesn't go through recombination when it's passed on to the offspring",
+        "option2": "Mitochondrial Eve, because the mitochondria goes through recombination when it's passed on to the offspring",
+        "option3": "Mitochondrial Eve, because the DNA doesn't go through recombination when it's passed on to the offspring",
+        "option4": "Eve, because the mitochondria doesn't go through recombination when it's passed on to the offspring"
+      },
+      "q12": {
+        "option1": "Be able to associate to a geographical location by comparing to other people",
+        "option2": "They can be used as a personal signature",
+        "option3": "They are genetically changes thereby we can use them to identify how long ago humanity started",
+        "option4": "Since they are localized in the mitochondrial DNA we can trace back to the original Homo Sapiens lineage"
+      }
+    },
+    "stim3": {
+      "q1": {
+        "option1": "Work",
+        "option2": "Power",
+        "option3": "Kinetic Energy",
+        "option4": "Joules"
+      },
+      "q2": {
+        "option1": "Force on an object",
+        "option2": "Angle between force and motion by an object",
+        "option3": "Distance object moves",
+        "option4": "Mass of the object"
+      },
+      "q3": {
+        "option1": "Positive",
+        "option2": "Negative",
+        "option3": "Zero",
+        "option4": "It depends"
+      },
+      "q4": {
+        "option1": "Zero",
+        "option2": "Positive",
+        "option3": "Negative",
+        "option4": "It depends"
+      },
+      "q5": {
+        "option1": "Push more than twice as hard",
+        "option2": "Push harder but less than twice as hard",
+        "option3": "Push twice as hard",
+        "option4": "It is not possible"
+      },
+      "q6": {
+        "option1": "Zero",
+        "option2": "Positive",
+        "option3": "Negative",
+        "option4": "It depends"
+      },
+      "q7": {
+        "option1": "The work done is twice as much",
+        "option2": "The work done is the same",
+        "option3": "The work done is half as much",
+        "option4": "The work done is zero"
+      },
+      "q8": {
+        "option1": "The object is at rest or is moving at a constant speed",
+        "option2": "There is more than one force acting on the object",
+        "option3": "There is only a single force on the object",
+        "option4": "The object is slowing down or the object is speeding up"
+      },
+      "q9": {
+        "option1": "The object is speeding up.",
+        "option2": "The object is slowing down.",
+        "option3": "The object is speeding up if it is moving in the positive direction but slowing down if it is moving in the negative direction.",
+        "option4": "The object is speeding up unless there is friction."
+      },
+      "q10": {
+        "option1": "The object is slowing down",
+        "option2": "The object is speeding up",
+        "option3": "The object is speeding up if it is moving in the negative direction but slowing down if it is moving in the positive direction.",
+        "option4": "There must be friction"
+      },
+      "q11": {
+        "option1": "-2 J",
+        "option2": "2 J",
+        "option3": "Zero",
+        "option4": "9 J"
+      },
+      "q12": {
+        "option1": "9 J",
+        "option2": "2 J",
+        "option3": "Zero",
+        "option4": "-2 J"
+      }
+    },
+    "stim4": {
+      "q1": {
+        "option1": "To prevent the two pieces of metal from touching each other",
+        "option2": "Charge Q can be stored because the circuit is thereby not complete",
+        "option3": "It increases the capacitance",
+        "option4": "Nothing happens since it has to be a conductive material to increase capacitance etc."
+      },
+      "q2": {
+        "option1": "Nothing happens",
+        "option2": "The charge Q decreases and the voltage V stays the same",
+        "option3": "Charge Q and voltage V increase",
+        "option4": "The voltage V decreases and the charge Q stays the same"
+      },
+      "q3": {
+        "option1": "The negative charge of the molecules in a dielectric are attracted by the positive charged capacitor plate, which causes those molecules to travel towards that plate",
+        "option2": "The negative charge of the molecules in a dielectric are attracted by the positive charged capacitor plate, which leads to redistribution of the charge.",
+        "option3": "If there are already polarized molecules in a dielectric, those will align due to the charge on the capacitor plates",
+        "option4": "The polarization of the dielectric molecules leads to a voltage V decrease in a charged capacitor not in a circuit"
+      },
+      "q4": {
+        "option1": "Polarize, stretched molecules",
+        "option2": "Polarized, traveling molecules",
+        "option3": "Depolarized, stretched molecules",
+        "option4": "Hyperpolarized, traveling molecules"
+      },
+      "q5": {
+        "option1": "Decreases the voltage V by canceling the contribution of the charges across the plates with its polarized molecules",
+        "option2": "Increases voltage V across the capacitor plates through its polarized molecules",
+        "option3": "Decreases the charge Q of the capacitor plates through its polarized molecules",
+        "option4": "Increases charge Q of the capacitor plates though its polarized plates"
+      },
+      "q6": {
+        "option1": "Charge Q increases",
+        "option2": "Charge Q decreases",
+        "option3": "Voltage V increases",
+        "option4": "Voltage V decreases"
+      },
+      "q7": {
+        "option1": "To obtain the same voltage V across the capacitor plates as the battery itself",
+        "option2": "To fully charge the capacitor plates",
+        "option3": "To maintain the charge Q constant",
+        "option4": "To increase the voltage V"
+      },
+      "q8": {
+        "option1": "The one with the smaller voltage V has a smaller capacitance C",
+        "option2": "The one with the bigger voltage V has a bigger capacitance C",
+        "option3": "Both capacitors have the same capacitance C",
+        "option4": "It is not possible to have the same charge Q with different voltages V"
+      },
+      "q9": {
+        "option1": "The one with the bigger charge Q has a bigger capacitance C",
+        "option2": "The one with the smaller charge Q has a bigger capacitance C",
+        "option3": "Both capacitors have the same capacitance C",
+        "option4": "It is not possible to have the same voltage V with different charges Q"
+      },
+      "q10": {
+        "option1": "Because it always increases the capacitance C",
+        "option2": "Because it always decreases the capacitance C",
+        "option3": "Because it decreases the voltage V when hooked up to a battery",
+        "option4": "Because it increases the voltage V when hooked up to a battery"
+      },
+      "q11": {
+        "option1": "Neither the charge Q on the capacitor nor the voltage V of the battery",
+        "option2": "Charge Q on the capacitor",
+        "option3": "Voltage V of the battery",
+        "option4": "Both the charge Q of the capacitor and voltage V of the battery"
+      },
+      "q12": {
+        "option1": "Dielectric material",
+        "option2": "Charge Q on the capacitor",
+        "option3": "Voltage V of the battery",
+        "option4": "Charge Q of the battery"
+      }
+    },
+    "stim5": {
+      "q1": {
+        "option1": "Distance between moon and planet",
+        "option2": "Period of motion of moon around the planet",
+        "option3": "Gravitational constant",
+        "option4": "Angle of moon towards the planet"
+      },
+      "q2": {
+        "option1": "The mass must be bigger",
+        "option2": "The mass must be the same",
+        "option3": "The mass must be smaller",
+        "option4": "It is not possible to have a larger distance with all other things being the same."
+      },
+      "q3": {
+        "option1": "The mass must be smaller",
+        "option2": "The mass must be the same",
+        "option3": "The mass must be bigger",
+        "option4": "It is not possible to have a larger moon orbit period with all other things being the same."
+      },
+      "q4": {
+        "option1": "r=3sqrt(M G/(R2pi)^2)",
+        "option2": "D=(d/2)/sin(alpha/2)",
+        "option3": "Parallax",
+        "option4": "Cluster"
+      },
+      "q5": {
+        "option1": "D=(d/2)/sin(alpha/2)",
+        "option2": "r=3sqrt(M G/(R2pi)^2)",
+        "option3": "Parallax",
+        "option4": "Period luminosity"
+      },
+      "q6": {
+        "option1": "Parallax",
+        "option2": "D=(d/2)/sin(alpha/2)",
+        "option3": "r=3sqrt(M G/(R2pi)^2)",
+        "option4": "Cluster"
+      },
+      "q7": {
+        "option1": "Diameter of the object",
+        "option2": "In which angle the object is positioned towards the earth",
+        "option3": "Gravitation of planet earth",
+        "option4": "Radius of planet earth"
+      },
+      "q8": {
+        "option1": "Increases",
+        "option2": "Decreases",
+        "option3": "Stays the same",
+        "option4": "It's not possible to determine distance this way"
+      },
+      "q9": {
+        "option1": "Does not matter",
+        "option2": "Increases",
+        "option3": "Decreases",
+        "option4": " Stays the same"
+      },
+      "q10": {
+        "option1": "Stellar parallax",
+        "option2": "r=3sqrt(M G/(R2pi)^2)",
+        "option3": "D=(d/2)/sin(alpha/2)",
+        "option4": "Parallax"
+      },
+      "q11": {
+        "option1": "Through simple geometry",
+        "option2": "Through looking at the star from multiple locations",
+        "option3": "Through consideration of background stars",
+        "option4": "Through the luminosity of the star"
+      },
+      "q12": {
+        "option1": "Cluster",
+        "option2": "Period Luminosity",
+        "option3": "Stellar parallax",
+        "option4": "D=(d/2)/sin(alpha/2)"
+      }
+    },
+    "stim6": {
+      "q1": {
+        "option1": "The Enzyme is stable in every condition",
+        "option2": "The Enzyme decreases the activation barrier",
+        "option3": "The Enzyme catalyzes the reaction",
+        "option4": "The Enzyme increases the reaction rate"
+      },
+      "q2": {
+        "option1": "Enzyme concentration",
+        "option2": "pH",
+        "option3": "Temperature",
+        "option4": "Substrate concentration"
+      },
+      "q3": {
+        "option1": "Configuration changes and thereby efficiency decreases",
+        "option2": "Configuration changes and thereby efficiency increases",
+        "option3": "The pH change is not significant enough to cause any change in efficiency",
+        "option4": "The pH change is not significant enough to cause any change in efficiency, which leads to an increase of the reaction rate"
+      },
+      "q4": {
+        "option1": "Configuration changes and thereby efficiency decreases",
+        "option2": "Configuration changes and thereby efficiency increases",
+        "option3": "The temperature change is not significant enough to cause any change in efficiency",
+        "option4": "The temperature change is not significant enough to cause any change in efficiency, which increases the reaction rate"
+      },
+      "q5": {
+        "option1": "The same in both containers",
+        "option2": "Container 1 will be faster than container 2",
+        "option3": "Container 2 will be faster than container 1",
+        "option4": "There will be no reaction in either"
+      },
+      "q6": {
+        "option1": "Container 1 will be faster than container 2",
+        "option2": "Container 2 will be faster than container 1",
+        "option3": "They both increase equally",
+        "option4": "There will be no reaction in either"
+      },
+      "q7": {
+        "option1": "It lowers the activation energy of the reaction",
+        "option2": "It introduces another pathway for the reaction to occur",
+        "option3": "It adds energy to the system",
+        "option4": "It raises the activation energy of the reaction"
+      },
+      "q8": {
+        "option1": "Increases linearly until a little before saturation is reached",
+        "option2": "Increases exponentially until saturation is reached",
+        "option3": "It will look like a hyperbola",
+        "option4": "Increases linearly"
+      },
+      "q9": {
+        "option1": "The oxygen and hydrogen bond differently in each molecule",
+        "option2": "There is an additional oxygen atom added to each molecule",
+        "option3": "There is an additional hydrogen atom added to each molecule",
+        "option4": "The molecules break into multiple parts"
+      },
+      "q10": {
+        "option1": 3,
+        "option2": 7,
+        "option3": 4,
+        "option4": 5
+      },
+      "q11": {
+        "option1": 2,
+        "option2": 1,
+        "option3": 7,
+        "option4": 4
+      },
+      "q12": {
+        "option1": "Because of saturation",
+        "option2": "Because all the enzymes are occupied with a substrate ",
+        "option3": "Because of configurational changes",
+        "option4": "Because all substrates are occupied with an enzyme"
+      }
+    }
+  }
+}

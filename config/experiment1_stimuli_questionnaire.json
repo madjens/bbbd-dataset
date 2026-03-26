@@ -1,0 +1,796 @@
+{
+  "questions": {
+    "domain": {
+      "stim1": {
+        "q1": "How is it possible to determine the temperature of a star?",
+        "q2": "What are stars made of?",
+        "q3": "Do all stars have the same size and shape?",
+        "q4": "Mark the INCORRECT sentence.",
+        "q5": "How long does it take for a star to form?",
+        "q6": "Is a shooting star a star?",
+        "q7": "Which of the following is NOT the name of a constellation:",
+        "q8": "Mark the INCORRECT sentence.",
+        "q9": "Light is a ….",
+        "q10": "Stars usually ?",
+        "q11": "What holds  a star together"
+      },
+      "stim2": {
+        "q1": "What kind of light bulbs are the most common in homes?",
+        "q2": "What kind of light bulb is the most efficient?",
+        "q3": "What is the efficiency % of the incandescent light bulb?",
+        "q4": "Mark the INCORRECT sentence",
+        "q5": "What percent of home electric bills is due to electric lights?",
+        "q6": "What is the electrical voltage used for most common US domestic appliances?",
+        "q7": "What is the average lifespan of an incandescent light bulb?",
+        "q8": "Light bulbs produce light and….",
+        "q9": "What is the metal piece inside of a light bulb called?",
+        "q10": "Fill in the blanks: Light bulbs convert _______ energy into ________ energy."
+      },
+      "stim3": {
+        "q1": "Which of the following is NOT a function of the human body's immune system?",
+        "q2": "Which of the following cells could be found in the human immune system:",
+        "q3": "An antigen is a molecule capable of inducing an immune response on the part of the host organism,though sometimes antigens can be part of the host itself. Mark the one which is not an antigen",
+        "q4": "An autoimmune disorder occurs when a person's immune system mistakenly attacks their own body tissues.Which of the disorders below is NOT an autoimmune disorder?",
+        "q5": "Mark the INCORRECT sentence about inflammation",
+        "q6": "Mark the INCORRECT sentence:",
+        "q7": "Which of the following options could be a possible cause for inflammation?",
+        "q8": "Which of the names below does NOT correspond to a type of inflammation?",
+        "q9": "Mark the INCORRECT sentence about the immune system"
+      },
+      "stim4": {
+        "q1": "Mark the INCORRECT sentence.",
+        "q2": "What does HTTP mean?",
+        "q3": "What does HTML mean?",
+        "q4": "What does URL mean?",
+        "q5": "Which of the names below do NOT correspond to a browser?",
+        "q6": "What country has the fastest internet connection in the world?",
+        "q7": "How many websites  are there on internet?",
+        "q8": "In general, all of the following use IP addresses EXCEPT:",
+        "q9": "When was the first tweet sent on twitter?"
+      },
+      "stim5": {
+        "q1": "Among the entire human population (all ages), what is the ratio of males to females?",
+        "q2": "Which of the following effects determines the gender of human babies?",
+        "q3": "In which age group do males outnumber females the most?",
+        "q4": "Which of the following environmental factors listed below DOES NOT contribute to the ratio of boys to girls born worldwide?",
+        "q5": "A baby born with the genetic code xy is",
+        "q6": "Which of the social factors listed below contributes to ratio of boys to girls born worldwide?",
+        "q7": "How many live births are intersex (neither male nor female)?",
+        "q8": "All of the following are common among countries with a more uneven gender balance except:"
+      }
+    },
+    "memory": {
+      "stim1": {
+        "q1": "What are stars?",
+        "q2": "What happens when light from a distant source passes through a small opening?",
+        "q3": "How does a hexagon leave its imprint?",
+        "q4": "Why do we see stars as pointy?",
+        "q5": "How does a double slit leave its imprint?",
+        "q6": "Mark the INCORRECT sentence.",
+        "q7": "__________ is the slight bending of light as it passes around the edge of an object.",
+        "q8": "Diffraction bends longer wavelength _____ light more than _____ light.",
+        "q9": "What is the shape of stars in Hubble space telescope photos?",
+        "q10": "What is the diffraction imprint of a circle?",
+        "q11": "What causes “suture lines”?",
+        "q12": "How do scientists test that individual suture lines are the cause of subject-specific diffraction patterns?"
+      },
+      "stim2": {
+        "q1": "When was the incandescent light bulb created?",
+        "q2": "The bulb does all of the following EXCEPT:",
+        "q3": "What is the role of the halogen gas in halogen bulbs?",
+        "q4": "Which gas exists in halogen light bulbs?",
+        "q5": "Why don’t vapor lamps need a fluorescent coating?",
+        "q6": "What happens when the electrons bump into the mercury atoms in the fluorescent bulbs?",
+        "q7": "Which of the following statements best describes the reactions that emit light within a fluorescent tube?",
+        "q8": "What is fluorescence?",
+        "q9": "Suppose you have a large warehouse or a street that you need to light, which one of the following would you use?",
+        "q10": "The LED semiconductors has 2 layers, one ____________ while the other ____________.",
+        "q11": "How does a crystal of semiconducting gallium interact to form light in an LED bulb? Choose the best answer."
+      },
+      "stim3": {
+        "q1": "Mark the option below that corresponds to a job that is NOT executed by the immune system.",
+        "q2": "Approximately how many body cells die fighting an infection?",
+        "q3": "What is the first cell type to intervene during a bacterial invasion?",
+        "q4": "What is the main job of the macrophage cell?",
+        "q5": "Approximately how long does it take bacteria to double its population in the bloodstream?",
+        "q6": "When T-cells are born they go through a very difficult and complicated training process.  How many of them survive?",
+        "q7": "Which of the following is INCORRECT about B-cells?",
+        "q8": "Mark the INCORRECT option about antibodies.",
+        "q9": "After the infection is wiped out most of the immune cells commit suicide. What are the cells that stay behind?",
+        "q10": "B cells are prevented from dying by:",
+        "q11": "Neutrophile cells commit suicide after __ in order to _______?",
+        "q12": "How long does it take for Dendritic cells to travel to the lymph nodes?"
+      },
+      "stim4": {
+        "q1": "When did networks begin communicating with each other?",
+        "q2": "Mark the correct options about emails.",
+        "q3": "Most internet traffic during the 1970’s was:",
+        "q4": "According to the video, what is packet switching?",
+        "q5": "When and where was the World Wide Web first launched?",
+        "q6": "Why didn’t the commercial network in Britain get developed?",
+        "q7": "What was the goal of the first network?",
+        "q8": "How did time sharing change the efficiency of mainframe computers?",
+        "q9": "What were the three main computer networks mentioned in the video, each of which was located in a different country?",
+        "q10": "What is the name of the first network?",
+        "q11": "For what primary reason did Tim Berners-Lee created the World Wide Web? Choose the best answer.",
+        "q12": "Which kind of companies saw the commercial potential of digital communication in the 1990’s?"
+      },
+      "stim5": {
+        "q1": "In which countries does human intervention increase the ratio boys to girls?",
+        "q2": "Most parents-to-be assume:",
+        "q3": "What is the ratio of boys to girls born worldwide?",
+        "q4": "How many more baby boys than baby girls are born worldwide each year?",
+        "q5": "What is the ratio of male to female zygotes during human conception?",
+        "q6": "Which of the following scenarios explains why the ratio of boys to girls changes with age?",
+        "q7": "What happens to the ratio of boys to girls as children grow and reach baby-making age?",
+        "q8": "What happened when a massive famine struck China in the 1960s?",
+        "q9": "In America, what is the probability that male billionaires will father a son?",
+        "q10": "Under what circumstances do women generally bear fewer boys?",
+        "q11": "Why is it a biological advantage to produce more girls during harsh living conditions?",
+        "q12": "Besides humans, what other group of animals also modulates the ratio of male to female births according to the scarcity of resources?"
+      }
+    }
+  },
+  "answers": {
+    "domain": {
+      "stim1": {
+        "q1": {
+          "option1": "By its color",
+          "option2": "By its size",
+          "option3": "By its shape",
+          "option4": "All options are correct"
+        },
+        "q2": {
+          "option1": "Gas",
+          "option2": "Dust",
+          "option3": "Meteorites",
+          "option4": "All options are correct"
+        },
+        "q3": {
+          "option1": "They have the same shape, but not the same size",
+          "option2": "They have the same size, but not the same shape",
+          "option3": "They all have the same size and shape",
+          "option4": "They all have different sizes and shapes"
+        },
+        "q4": {
+          "option1": "The sun is the hottest star in the Universe",
+          "option2": "Most of the stars you see in the night sky are bigger and brighter than the sun.",
+          "option3": "Stars die and go through many phases of life, much like organic beings.",
+          "option4": "Every single star has almost the exact same chemical composition."
+        },
+        "q5": {
+          "option1": "Around  100 000 years",
+          "option2": "Around 1000 years",
+          "option3": "Around 10 000",
+          "option4": "Around 100 000 000 years"
+        },
+        "q6": {
+          "option1": "It is a small meteor",
+          "option2": "It is a exploding star",
+          "option3": "It is a dead star",
+          "option4": "It is something not listed here"
+        },
+        "q7": {
+          "option1": "Hippopotames",
+          "option2": "Scorpius",
+          "option3": "Orion",
+          "option4": "Ursa Major"
+        },
+        "q8": {
+          "option1": "There is only one type of star",
+          "option2": "Stars consist of super hot gas, the composition of which is mostly hydrogen and helium",
+          "option3": "The sun is the closest star to Earth",
+          "option4": "On a clear night, you can see stars that are over a quadrillion miles away"
+        },
+        "q9": {
+          "option1": "Both a wave and a particle",
+          "option2": "Neither a wave nor a particle",
+          "option3": "Particle",
+          "option4": "Wave"
+        },
+        "q10": {
+          "option1": "Emit light",
+          "option2": "Get light from another object",
+          "option3": "Star are defined by their shape and size, not by their light emittance",
+          "option4": "Absorb light and then emit it when the light source is gone"
+        },
+        "q11": {
+          "option1": "Its own gravity",
+          "option2": "The gravity of the sun",
+          "option3": "The gravity of the universe",
+          "option4": "It is not known"
+        }
+      },
+      "stim2": {
+        "q1": {
+          "option1": "Incandescent bulbs",
+          "option2": "Fluorescent bulbs",
+          "option3": "Light Emitting Diodes",
+          "option4": "Halogen light bulbs"
+        },
+        "q2": {
+          "option1": "Light Emitting Diodes",
+          "option2": "Incandescent bulbs",
+          "option3": "Fluorescent bulbs",
+          "option4": "Other"
+        },
+        "q3": {
+          "option1": "Less than 10%",
+          "option2": "30 percent",
+          "option3": "50 percent",
+          "option4": "80 percent"
+        },
+        "q4": {
+          "option1": "Light bulbs are only ever used for the purpose of lighting the environment",
+          "option2": "Almost half of the electricity used by industry is for lighting",
+          "option3": "Some light bulbs contain gas inside of the bulbs",
+          "option4": "Prior to 1900 electric light bulbs did not have filaments"
+        },
+        "q5": {
+          "option1": "25 percent",
+          "option2": "90 percent",
+          "option3": "50 percent",
+          "option4": "5 percent"
+        },
+        "q6": {
+          "option1": "120 V",
+          "option2": "110 V",
+          "option3": "220 V",
+          "option4": "230 V"
+        },
+        "q7": {
+          "option1": "1200 hours",
+          "option2": "500 hours",
+          "option3": "2000 hours",
+          "option4": "3000 hours"
+        },
+        "q8": {
+          "option1": "Heat",
+          "option2": "Electrons",
+          "option3": "Protons",
+          "option4": "They only produce light"
+        },
+        "q9": {
+          "option1": "Filament",
+          "option2": "Filling",
+          "option3": "Electrode",
+          "option4": "Semiconducting crystal"
+        },
+        "q10": {
+          "option1": "electrical; light",
+          "option2": "electrical; chemical",
+          "option3": "kinetic; potential",
+          "option4": "All options are correct"
+        }
+      },
+      "stim3": {
+        "q1": {
+          "option1": "The immune system often causes one to contract the same illness a second time after warding off an infection.",
+          "option2": "The immune system attacks organisms and substances that invade body systems and cause disease.",
+          "option3": "The immune system is made up of a network of cells, tissues, and organs that work together to protect the body.",
+          "option4": "The immune system is a host defense system comprising many biological structures and processes within an organism."
+        },
+        "q2": {
+          "option1": "Dendritic",
+          "option2": "Antibodies",
+          "option3": "Hair cells",
+          "option4": "All options are correct"
+        },
+        "q3": {
+          "option1": "Antibodies",
+          "option2": "Bacteria",
+          "option3": "Virus",
+          "option4": "Fungi"
+        },
+        "q4": {
+          "option1": "Osteoporosis",
+          "option2": "Multiple sclerosis",
+          "option3": "Lupus",
+          "option4": "Asthma"
+        },
+        "q5": {
+          "option1": "Inflammation is a synonym for infection",
+          "option2": "Inflammation is part of the complex biological response of body tissues to harmful stimuli",
+          "option3": "Inflammation involves immune cells, blood vessels, and molecular mediators",
+          "option4": "The function of inflammation is to eliminate the initial cause of cell injury and clear out tissues damaged"
+        },
+        "q6": {
+          "option1": "All germs are bad",
+          "option2": "Vaccines educate your immune system",
+          "option3": "Sleep deprivation can impact immunity",
+          "option4": "Your immune system can attack itself"
+        },
+        "q7": {
+          "option1": "All options are correct",
+          "option2": "Physical injury, blunt or penetrating",
+          "option3": "Frostbite",
+          "option4": "Burn"
+        },
+        "q8": {
+          "option1": "Hekelitis",
+          "option2": "Rhinitis",
+          "option3": "Appendicitis",
+          "option4": "Dermatitis"
+        },
+        "q9": {
+          "option1": "Stress does not affect the way your immune system works",
+          "option2": "Your immune system can attack itself",
+          "option3": "Your immune system may suffer from lack of sleep",
+          "option4": "Disease symptoms are sometimes the result of your immune system doing its job"
+        }
+      },
+      "stim4": {
+        "q1": {
+          "option1": "30% of American adults do not use the Internet",
+          "option2": "People spend more time browsing the web on mobile devices rather than on desktop computers",
+          "option3": "The majority of internet traffic is not generated by humans, but by bots and malware",
+          "option4": "There are treatment camps for internet addicts"
+        },
+        "q2": {
+          "option1": "HyperText Transfer Protocol",
+          "option2": "HyperText Transfer Process",
+          "option3": "HyperTool Transfer Protocol",
+          "option4": "None of the options are correct"
+        },
+        "q3": {
+          "option1": "HyperText Markup Language",
+          "option2": "HyperText Markup Logistics",
+          "option3": "HyperTool Markup Language",
+          "option4": "None of the options are correct"
+        },
+        "q4": {
+          "option1": "Uniform Resource Locator",
+          "option2": "Uniform Resource Language",
+          "option3": "Uniform Rapid Locator",
+          "option4": "None of the options are correct"
+        },
+        "q5": {
+          "option1": "Yahoo",
+          "option2": "Mozilla Firefox",
+          "option3": "Safari",
+          "option4": "Google Chrome"
+        },
+        "q6": {
+          "option1": "South Korea",
+          "option2": "United States of America",
+          "option3": "Finland",
+          "option4": "Norway"
+        },
+        "q7": {
+          "option1": "Around 1 billion",
+          "option2": "Around 100 million",
+          "option3": "Around 500 million",
+          "option4": "Around 10 billion"
+        },
+        "q8": {
+          "option1": "A personal computer that is not connected to the internet",
+          "option2": "A website",
+          "option3": "A server computer hosting a website",
+          "option4": "A personal computer used to access the Internet"
+        },
+        "q9": {
+          "option1": "In the year 2006",
+          "option2": "In the year 2002",
+          "option3": "In the year 2010",
+          "option4": "In the year 1999"
+        }
+      },
+      "stim5": {
+        "q1": {
+          "option1": "101 males to 100 females",
+          "option2": "100 males to 105 females",
+          "option3": "100 males to 100 females",
+          "option4": "None of the options are correct"
+        },
+        "q2": {
+          "option1": "All options are correct",
+          "option2": "The stage of the mother’s ovulation cycle",
+          "option3": "Psychological stress",
+          "option4": "Whether or not the mother has had children previously"
+        },
+        "q3": {
+          "option1": "At birth",
+          "option2": "All ages under 15 years old",
+          "option3": "15 - 64 years old",
+          "option4": "Over 65"
+        },
+        "q4": {
+          "option1": "Effects of sunlight exposure",
+          "option2": "Effects of chemical pollution",
+          "option3": "Effects of gestation environment",
+          "option4": "Effects of climate change"
+        },
+        "q5": {
+          "option1": "Male",
+          "option2": "Female",
+          "option3": "More information needed to determine the sex of the baby",
+          "option4": "Mother’s hormones are what determine ultimately the sex of the baby"
+        },
+        "q6": {
+          "option1": "Both options are correct",
+          "option2": "Sex selective abortion",
+          "option3": "Early marriage and parents' age",
+          "option4": "Both options are incorrect"
+        },
+        "q7": {
+          "option1": "0.1% - 1.7%",
+          "option2": "3% - 5%",
+          "option3": "6% - 8%",
+          "option4": "More than 8%"
+        },
+        "q8": {
+          "option1": "High rates of literacy",
+          "option2": "Rapid decline in fertility",
+          "option3": "Pressure for women to give birth to sons (often because of cultural preference)",
+          "option4": "Families have widespread access to technology to selectively abort female fetuses"
+        }
+      }
+    },
+    "memory": {
+      "stim1": {
+        "q1": {
+          "option1": "Big hot round balls of plasma",
+          "option2": "Dead meteorites",
+          "option3": "Big hot round balls of dust",
+          "option4": "None of the options"
+        },
+        "q2": {
+          "option1": "All options are correct",
+          "option2": "The passing light picks up an imprint of that opening",
+          "option3": "Its waves interfere with each other",
+          "option4": "Its waves are bounced or bent slightly"
+        },
+        "q3": {
+          "option1": "Dashed six-pointed star",
+          "option2": "Dashed four-pointed star",
+          "option3": "Concentric rings",
+          "option4": "Series of dashed dashes"
+        },
+        "q4": {
+          "option1": "Because the imperfection of our eyes leave this imprint on light",
+          "option2": "Because stars are really pointy",
+          "option3": "Because they are bright objects in a dark night sky",
+          "option4": "None of the options are correct"
+        },
+        "q5": {
+          "option1": "Series of dashed dashes",
+          "option2": "Concentric rings",
+          "option3": "Dashed four-pointed star",
+          "option4": "Dashed six-pointed star"
+        },
+        "q6": {
+          "option1": "Only humans see pointy stars",
+          "option2": "The right and left eye of a person sees a slightly different star-like smear",
+          "option3": "Any particular eye sees the same star shape for every star",
+          "option4": "None of the options are incorrect."
+        },
+        "q7": {
+          "option1": "Diffraction",
+          "option2": "Scattering",
+          "option3": "Reflection",
+          "option4": "Refraction"
+        },
+        "q8": {
+          "option1": "red; blue",
+          "option2": "blue; yellow",
+          "option3": "green; red",
+          "option4": "green; yellow"
+        },
+        "q9": {
+          "option1": "Four pointed",
+          "option2": "Concentric rings",
+          "option3": "Six pointed",
+          "option4": "Series of dashes"
+        },
+        "q10": {
+          "option1": "Concentric rings",
+          "option2": "Dashed lines",
+          "option3": "4-pointed perpendicular lines",
+          "option4": "Dashed rings"
+        },
+        "q11": {
+          "option1": "Where the fibers that make up the eye’s lens meet",
+          "option2": "Health problems",
+          "option3": "Short-sightedness",
+          "option4": "All options are correct"
+        },
+        "q12": {
+          "option1": "Shine a laser into people’s eyes",
+          "option2": "Measure the pattern of suture lines in an individual’s eyes",
+          "option3": "Compare left and right eye shapes",
+          "option4": "Photograph the iris patterns and compare to star shapes"
+        }
+      },
+      "stim2": {
+        "q1": {
+          "option1": "19th Century",
+          "option2": "18th Century",
+          "option3": "17th Century",
+          "option4": "20th Century"
+        },
+        "q2": {
+          "option1": "Increases the brightness of the light emitted",
+          "option2": "Allows the filament to produce light more efficiently",
+          "option3": "Prevents gas from escaping from inside the bulb",
+          "option4": "Prevents oxygen from reaching the filament"
+        },
+        "q3": {
+          "option1": "All options are correct",
+          "option2": "Keep the light bulb clean",
+          "option3": "Prevent the wire from burning out",
+          "option4": "Helps redeposit atoms back onto the filament"
+        },
+        "q4": {
+          "option1": "Hydrogen bromide",
+          "option2": "Mercury chloride",
+          "option3": "Nitrogen bromide",
+          "option4": "Nitrogen fluoride"
+        },
+        "q5": {
+          "option1": "Because they emit mainly visible light",
+          "option2": "Because they don’t use gas",
+          "option3": "Because they don’t have a bulb",
+          "option4": "All options are correct"
+        },
+        "q6": {
+          "option1": "The energy of the collision makes the atoms get excited",
+          "option2": "The energy of the collision makes the atoms relax",
+          "option3": "The energy of the collision makes the atoms keep the inside of the bulb clean",
+          "option4": "The energy of the collision splits the atom and releases energy"
+        },
+        "q7": {
+          "option1": "Electrons in the electrical current collide with mercury gas atoms, causing the atoms to emit light in their excited state",
+          "option2": "Chlorine gas in the tubes excites the electrons in the electrical current to emit light",
+          "option3": "Chemical reactions cause the hydrogen atoms in the tube to collide with the electrons, which emit light in their excited state",
+          "option4": "None of the options are correct"
+        },
+        "q8": {
+          "option1": "The process of absorbing ultraviolet light and re-emitting it as more visible light",
+          "option2": "The process of converting electrical current into visible light",
+          "option3": "The process of capturing the atoms that evaporates of the filament and put them back where they belong",
+          "option4": "The process of keeping the inside of the bulb clean and clear"
+        },
+        "q9": {
+          "option1": "Vapor lamps",
+          "option2": "LED",
+          "option3": "Any light producing source",
+          "option4": "Halogens"
+        },
+        "q10": {
+          "option1": "Provides electrons with a lot of energy, Provides a place for the electrons to relax",
+          "option2": "Provides tungsten atoms, Provides a place for the electrons relax",
+          "option3": "Provides electrons with a lot of energy, Provides a place for the electrons absorb energy",
+          "option4": "None of options are correct"
+        },
+        "q11": {
+          "option1": "Electrons are transported from one end of the diode to the other and emit light",
+          "option2": "Electrical current moves electrons from a relaxed state to an excited state, which results in light",
+          "option3": "Thermal energy transports the electrons from a higher state of energy to a lower state of energy, emitting light",
+          "option4": "None of the options are correct"
+        }
+      },
+      "stim3": {
+        "q1": {
+          "option1": "Produce fungi",
+          "option2": "Produce antibodies",
+          "option3": "Kill enemies",
+          "option4": "Communicate"
+        },
+        "q2": {
+          "option1": "Millions",
+          "option2": "Billions",
+          "option3": "Thousands",
+          "option4": "Hundreds"
+        },
+        "q3": {
+          "option1": "Guard cells / macrophage",
+          "option2": "Memory cells",
+          "option3": "B-cells",
+          "option4": "Dendritic cells"
+        },
+        "q4": {
+          "option1": "To kill enemies",
+          "option2": "To cause inflammation",
+          "option3": "To activate cells",
+          "option4": "All  options are correct"
+        },
+        "q5": {
+          "option1": "20 minutes",
+          "option2": "30 minutes",
+          "option3": "30 seconds",
+          "option4": "20 seconds"
+        },
+        "q6": {
+          "option1": "A quarter of them",
+          "option2": "Half of them",
+          "option3": "All of them",
+          "option4": "None of the options are correct"
+        },
+        "q7": {
+          "option1": "B-cells send chemical instructions to the rest of the immune system.",
+          "option2": "The B-cells are activated by the T-cells",
+          "option3": "The B-cells are considered a very powerful weapons factory",
+          "option4": "B-cells work so hard that they can literally die from exhaustion"
+        },
+        "q8": {
+          "option1": "They are produced by the dendritic cells",
+          "option2": "They are engineered to bind to the  surface of a specific intruder",
+          "option3": "There are different kinds of antibodies that have slightly different jobs",
+          "option4": "They flood the blood and saturate the body"
+        },
+        "q9": {
+          "option1": "Memory cells",
+          "option2": "Dendritic cells",
+          "option3": "Macrophage cells",
+          "option4": "All options are correct"
+        },
+        "q10": {
+          "option1": "T cells",
+          "option2": "Antibodies",
+          "option3": "Helper B-cells",
+          "option4": "Any white cell"
+        },
+        "q11": {
+          "option1": "5 days; prevent them from causing too much damage",
+          "option2": "5 hours; avoid wasting resources",
+          "option3": "The invading bacteria is defeated; prevent them from causing too much damage",
+          "option4": "4 days; avoid wasting resources"
+        },
+        "q12": {
+          "option1": "1 day",
+          "option2": "1 hour",
+          "option3": "12 hours",
+          "option4": "More than 2 days"
+        }
+      },
+      "stim4": {
+        "q1": {
+          "option1": "During 1975",
+          "option2": "During 1940",
+          "option3": "During 1950",
+          "option4": "During 1980"
+        },
+        "q2": {
+          "option1": "All options are correct",
+          "option2": "Most internet traffic in 1976 was email",
+          "option3": "Email was developed for the ARPANET",
+          "option4": "Email was developed in 1972"
+        },
+        "q3": {
+          "option1": "Written communication",
+          "option2": "Sharing digital images",
+          "option3": "Statistical data sets",
+          "option4": "Website retrievals"
+        },
+        "q4": {
+          "option1": "Both options are correct",
+          "option2": "Both options are  incorrect",
+          "option3": "Cutting up data at one end and putting it back together at the other  ",
+          "option4": "A way of avoiding congestion in busy networks"
+        },
+        "q5": {
+          "option1": "1991; France",
+          "option2": "1980; Russia",
+          "option3": "1989; U.S.A.",
+          "option4": "1995; England"
+        },
+        "q6": {
+          "option1": "It lacked funding",
+          "option2": "It didn’t work",
+          "option3": "It was not finished",
+          "option4": "None of the options are correct"
+        },
+        "q7": {
+          "option1": "Optimizing processor usage",
+          "option2": "Facilitating communication",
+          "option3": "Sharing research materials",
+          "option4": "Espionage"
+        },
+        "q8": {
+          "option1": "The mainframes could process several pieces of data at once, so that multiple scientists could use it at the same time",
+          "option2": "It connected multiple mainframe computers together, resulting in increased communication between scientists",
+          "option3": "It cut up data at one end and joined it at the other",
+          "option4": "All options are correct"
+        },
+        "q9": {
+          "option1": "CYCLADES, ARPANET, NPL",
+          "option2": "HTML, CYCLADES, NPL",
+          "option3": "TCP, HTML, ARPANET",
+          "option4": "NPL, TCP, WWW"
+        },
+        "q10": {
+          "option1": "ARPANET",
+          "option2": "WWW",
+          "option3": "CYCLADES",
+          "option4": "HTML"
+        },
+        "q11": {
+          "option1": "He wanted to create a platform for information to be organized and shared easily",
+          "option2": "He wanted to better organize scientists’ information into folders",
+          "option3": "He wanted to increase communication between people",
+          "option4": "He wanted to provide ordinary people with better accessibility to scientific information"
+        },
+        "q12": {
+          "option1": "Phone companies",
+          "option2": "Car companies",
+          "option3": "Clothing companies",
+          "option4": "Travel agencies"
+        }
+      },
+      "stim5": {
+        "q1": {
+          "option1": "China",
+          "option2": "Azerbaijan",
+          "option3": "Armenia",
+          "option4": "South Korea"
+        },
+        "q2": {
+          "option1": "The sex of their child comes down to a flip of the coin",
+          "option2": "The sex of their child depends on environmental factors",
+          "option3": "The sex of their child depends on social factors",
+          "option4": "All options are correct  "
+        },
+        "q3": {
+          "option1": "106:100",
+          "option2": "100:100",
+          "option3": "96:100",
+          "option4": "None of the options are correct"
+        },
+        "q4": {
+          "option1": "10 million",
+          "option2": "1 million",
+          "option3": "5 million",
+          "option4": "20 million"
+        },
+        "q5": {
+          "option1": "150 male zygotes for 100 female zygotes",
+          "option2": "200 male zygotes for 100 female zygotes",
+          "option3": "100 male zygotes for 200 female zygotes",
+          "option4": "100 male zygotes for 150 female zygotes"
+        },
+        "q6": {
+          "option1": "Boys are more likely to die from diseases at a young age",
+          "option2": "Girls are less likely to survive than males due to genetic reasons.",
+          "option3": "Girls more vulnerable to fatal diseases.",
+          "option4": "The sex ratio does not change"
+        },
+        "q7": {
+          "option1": "The ratio of boys to girls is about one to one",
+          "option2": "The ratio of boys to girls is still higher than one",
+          "option3": "The ratio of boys to girls decays to less than one",
+          "option4": "Depends on each population  "
+        },
+        "q8": {
+          "option1": "The likelihood of having a son decreased",
+          "option2": "The likelihood of having a daughter decreased",
+          "option3": "The likelihood of having a child of either sex increased",
+          "option4": "The likelihood of having a son increased"
+        },
+        "q9": {
+          "option1": "Higher than average",
+          "option2": "Lower than average",
+          "option3": "Same probability",
+          "option4": "It is not known"
+        },
+        "q10": {
+          "option1": "When resources are scarce",
+          "option2": "When the living environment is healthy",
+          "option3": "When the economy is good",
+          "option4": "All options are correct"
+        },
+        "q11": {
+          "option1": "Women are much more likely than men to reproduce regardless of their living conditions",
+          "option2": "Women are less likely to die during harsh living conditions",
+          "option3": "Men require more sustenance and attention to survive",
+          "option4": "All options are correct"
+        },
+        "q12": {
+          "option1": "Mammals",
+          "option2": "Birds",
+          "option3": "Reptiles",
+          "option4": "All options are correct"
+        }
+      }
+    }
+  }
+}

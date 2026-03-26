@@ -26,7 +26,7 @@ for experiment_no = 1:3
 
     %% Static per-experiment files
     write_bidsignore(exp_output);
-    copy_readme(bbbd_source_dir, exp_output, experiment_no);
+    copy_readme(exp_output, experiment_no);
 
     %% dataset_description.json
     write_dataset_description(exp_output, experiment_no);
@@ -37,20 +37,8 @@ for experiment_no = 1:3
     write_participants(demo, exp_output, tired_labels, use_tired_labels, has_hearing);
 
     %% phenotype: stimuli_questionnaire_scores.tsv
-    points_file = dir(fullfile(data_dir, sprintf('experiment_%d', experiment_no), sprintf('Experiment_%d_Points.mat', experiment_no)));
-    if isempty(points_file)
-        points_file = dir(fullfile(data_dir, sprintf('experiment_%d', experiment_no), '*Points*.mat'));
-    end
-    if ~isempty(points_file)
-        pts = load(fullfile(points_file(1).folder, points_file(1).name));
-        par_nos = [demo.no];
-        if experiment_no == 1 || (experiment_no == 2 && isfield(pts, 'Npoints_stim_pre'))
-            % Exp1 and exp2 have separate domain (pre) and memory (post) scores
-            write_scores_exp1(pts, par_nos, phenotype_dir);
-        else
-            write_scores_exp23(pts, par_nos, phenotype_dir);
-        end
-    end
+    q_tsv = fullfile('config', sprintf('experiment%d_stimuli_questionnaire.tsv', experiment_no));
+    write_scores_from_questionnaire(q_tsv, phenotype_dir, experiment_no);
 
     %% phenotype: feedback, ASRS, digit span (exp2 and 3 only)
     if experiment_no >= 2
@@ -83,7 +71,6 @@ end
 %% EXPERIMENTS 4 and 5 (shared raw data, split by doIntervention)
 demo_all = load(fullfile(data_dir, 'experiment_4', 'Experiment_6_demographics.mat'));
 demo_all = demo_all.(fieldnames(demo_all){1});
-pts4 = load(fullfile(data_dir, 'experiment_4', 'Experiment_6_Points.mat'));
 
 di = load(fullfile('config', 'doIntervention_indexing.mat'));
 doIntervention = di.doIntervention;
@@ -91,13 +78,15 @@ doIntervention = di.doIntervention;
 demo_exp4 = demo_all(~doIntervention);  % no intervention
 demo_exp5 = demo_all(doIntervention);   % intervention
 
+q6_file = fullfile(data_dir, 'experiment_4', 'Experiment_6_questionnaire.mat');
+
 for exp_no = [4, 5]
     if exp_no == 4
         demo = demo_exp4;
-        scores = pts4.Npoints_stim_nointerv;  % 43 x 3
+        intervention_flag = false;
     else
         demo = demo_exp5;
-        scores = pts4.Npoints_stim_interv;    % 49 x 3
+        intervention_flag = true;
     end
 
     exp_output = fullfile(output_dir, sprintf('experiment%d', exp_no));
@@ -106,32 +95,28 @@ for exp_no = [4, 5]
     make_dir(phenotype_dir);
 
     write_bidsignore(exp_output);
-    copy_readme(bbbd_source_dir, exp_output, exp_no);
+    copy_readme(exp_output, exp_no);
     write_dataset_description(exp_output, exp_no);
     write_participants(demo, exp_output, tired_labels, true, false);
 
-    par_nos = [demo.no];
-    write_scores_exp45(scores, par_nos, phenotype_dir);
+    % Scores from static questionnaire TSV
+    q_tsv = fullfile('config', sprintf('experiment%d_stimuli_questionnaire.tsv', exp_no));
+    write_scores_from_questionnaire(q_tsv, phenotype_dir, exp_no);
 
     % Feedback (using exp4 raw source)
     q_file = dir(fullfile(data_dir, 'experiment_4', '*questionnaire*.mat'));
     if ~isempty(q_file)
         q = load(fullfile(q_file(1).folder, q_file(1).name));
         if isfield(q, 'questionnaireStimulusData')
-            write_stimuli_feedback(q.questionnaireStimulusData, par_nos, phenotype_dir);
+            write_stimuli_feedback(q.questionnaireStimulusData, [demo.no], phenotype_dir);
         end
     end
 
-    % ASRS (exp4/5 — load from questionnaire.mat)
-    write_asrs_exp45(fullfile(data_dir, 'experiment_4', 'Experiment_6_questionnaire.mat'), par_nos, phenotype_dir);
+    % ASRS from T_asrs_summary in questionnaire.mat
+    write_asrs_exp45(q6_file, intervention_flag, phenotype_dir);
 
-    ds_file = dir(fullfile(data_dir, 'experiment_4', '*digitspan*.mat'));
-    if ~isempty(ds_file)
-        ds = load(fullfile(ds_file(1).folder, ds_file(1).name));
-        T_all = ds.(fieldnames(ds){1});
-        mask = ismember(T_all{:,1}, par_nos);
-        write_digitspan(T_all(mask,:), phenotype_dir);
-    end
+    % Digitspan from T_digitspan_summary in questionnaire.mat
+    write_digitspan_exp45(q6_file, intervention_flag, phenotype_dir);
 
     fprintf('Experiment %d descriptors written to %s\n', exp_no, exp_output);
 end
@@ -240,49 +225,66 @@ function write_participants(demo, exp_output, tired_labels, use_tired_labels, ha
     write_json(fullfile(exp_output, 'participants.json'), sidecar);
 end
 
-function write_scores_exp1(pts, par_nos, phenotype_dir)
-    % Exp1: pre (domain) and post (memory) scores, 27 subs x 5 stims
-    rows = {};
-    for i = 1:length(par_nos)
-        for s = 1:size(pts.Npoints_stim_post, 2)
-            rows{end+1} = {sprintf('sub-%02d', par_nos(i)), s, ...
-                NaN, pts.Npoints_stim_pre(i, s), ...
-                NaN, pts.Npoints_stim_post(i, s)};
-        end
+function write_scores_from_questionnaire(q_tsv, phenotype_dir, exp_no)
+    % Derives stimuli_questionnaire_scores.tsv by aggregating the static
+    % stimuli_questionnaire.tsv from config/. Guarantees exact match with BBBD-unzipped.
+    if ~isfile(q_tsv)
+        fprintf('  scores: questionnaire TSV not found at %s — skipping\n', q_tsv);
+        return;
     end
-    T = cell2table(vertcat(rows{:}), 'VariableNames', ...
-        {'participant_id','stimulus_id','total_domain_questions','domain_score', ...
-         'total_memory_questions','memory_score'});
-    writetable(T, fullfile(phenotype_dir, 'stimuli_questionnaire_scores.tsv'), ...
-        'FileType', 'text', 'Delimiter', '\t');
-end
+    T = readtable(q_tsv, 'FileType', 'text', 'Delimiter', '\t', 'TextType', 'string');
+    pars = unique(T.participant_id, 'stable');
+    rows = {};
 
-function write_scores_exp23(pts, par_nos, phenotype_dir)
-    % Exp2/3: single score per stim, subs x stims
-    scores = pts.Npoints_stim;
-    rows = {};
-    for i = 1:length(par_nos)
-        for s = 1:size(scores, 2)
-            rows{end+1} = {sprintf('sub-%02d', par_nos(i)), s, NaN, scores(i, s)};
+    if exp_no <= 2
+        % domain + memory split (exp1 uses stimulus_id, exp2 uses stim_no)
+        if ismember('stimulus_id', T.Properties.VariableNames)
+            stim_col = 'stimulus_id';
+        else
+            stim_col = 'stim_no';
         end
-    end
-    T = cell2table(vertcat(rows{:}), 'VariableNames', ...
-        {'participant_id','stim_no','total_questions','score'});
-    writetable(T, fullfile(phenotype_dir, 'stimuli_questionnaire_scores.tsv'), ...
-        'FileType', 'text', 'Delimiter', '\t');
-end
+        for p = 1:length(pars)
+            Tp = T(T.participant_id == pars(p), :);
+            stims = unique(Tp.(stim_col));
+            for s = 1:length(stims)
+                Ts = Tp(Tp.(stim_col) == stims(s), :);
+                dom = Ts(Ts.question_type == "domain", :);
+                mem = Ts(Ts.question_type == "memory", :);
+                rows{end+1} = {char(pars(p)), stims(s), height(dom), sum(dom.is_correct), height(mem), sum(mem.is_correct)};
+            end
+        end
+        Tout = cell2table(vertcat(rows{:}), 'VariableNames', ...
+            {'participant_id', stim_col, 'total_domain_questions', 'domain_score', ...
+             'total_memory_questions', 'memory_score'});
 
-function write_scores_exp45(scores, par_nos, phenotype_dir)
-    % Exp4/5: single score per stim, subs x 3 stims
-    rows = {};
-    for i = 1:length(par_nos)
-        for s = 1:size(scores, 2)
-            rows{end+1} = {sprintf('sub-%02d', par_nos(i)), s, NaN, scores(i, s)};
+    elseif exp_no == 3
+        % single floating-point score per stim (partial credit possible)
+        for p = 1:length(pars)
+            Tp = T(T.participant_id == pars(p), :);
+            stims = unique(Tp.stim_no);
+            for s = 1:length(stims)
+                Ts = Tp(Tp.stim_no == stims(s), :);
+                rows{end+1} = {char(pars(p)), stims(s), height(Ts), sum(Ts.score)};
+            end
         end
+        Tout = cell2table(vertcat(rows{:}), 'VariableNames', ...
+            {'participant_id','stim_no','total_questions','score'});
+
+    else
+        % exp4/5: integer score per stimulus (sum is_correct)
+        for p = 1:length(pars)
+            Tp = T(T.participant_id == pars(p), :);
+            stims = unique(Tp.stimulus_no);
+            for s = 1:length(stims)
+                Ts = Tp(Tp.stimulus_no == stims(s), :);
+                rows{end+1} = {char(pars(p)), stims(s), height(Ts), sum(Ts.is_correct)};
+            end
+        end
+        Tout = cell2table(vertcat(rows{:}), 'VariableNames', ...
+            {'participant_id','stimulus_no','total_questions','score'});
     end
-    T = cell2table(vertcat(rows{:}), 'VariableNames', ...
-        {'participant_id','stimulus_no','total_questions','score'});
-    writetable(T, fullfile(phenotype_dir, 'stimuli_questionnaire_scores.tsv'), ...
+
+    writetable(Tout, fullfile(phenotype_dir, 'stimuli_questionnaire_scores.tsv'), ...
         'FileType', 'text', 'Delimiter', '\t');
 end
 
@@ -408,50 +410,58 @@ function par_no = get_par_no_from_metadata(m)
     end
 end
 
-function write_asrs_exp45(questionnaire_file, par_nos, phenotype_dir)
-    % Exp4/5: load ASRS from questionnaire.mat. Writes per-question data if
-    % available (q1-q18 columns present), otherwise writes summary scores only.
+function write_asrs_exp45(questionnaire_file, intervention_flag, phenotype_dir)
+    % Exp4/5: load T_asrs_summary from Experiment_6_questionnaire.mat.
+    % Filter by intervention flag (false=exp4, true=exp5), remap columns, write TSV.
     if ~isfile(questionnaire_file)
         fprintf('ASRS: questionnaire file not found: %s\n', questionnaire_file);
         return;
     end
     q = load(questionnaire_file);
-
-    % Find the ASRS table (try common field names)
-    T_all = [];
-    for fname = fieldnames(q)'
-        f = fname{1};
-        if contains(lower(f), 'asrs')
-            T_all = q.(f);
-            break;
-        end
-    end
-    if isempty(T_all)
-        fprintf('ASRS: no ASRS field found in %s\n', questionnaire_file);
+    if ~isfield(q, 'T_asrs_summary')
+        fprintf('ASRS: T_asrs_summary not found in %s\n', questionnaire_file);
         return;
     end
-
-    % Filter to this experiment's participants
-    if istable(T_all) && any(strcmp(T_all.Properties.VariableNames, 'participant_no'))
-        mask = ismember(T_all.participant_no, par_nos);
-        T = T_all(mask, :);
-    else
-        T = T_all;
-    end
-
-    % Rename mevd-style column names to BBBD-style
+    T = q.T_asrs_summary;
+    T = T(T.intervention == intervention_flag, :);
+    T = removevars(T, 'intervention');
     T = remap_asrs_columns(T);
 
-    % Check if per-question columns exist
-    has_per_question = any(strcmp(T.Properties.VariableNames, 'q1'));
+    participant_id = arrayfun(@(x) sprintf('sub-%02d', x), T.participant_no, 'UniformOutput', false);
+    T = removevars(T, 'participant_no');
+    T = addvars(T, participant_id, 'Before', 1, 'NewVariableNames', 'participant_id');
+
+    writetable(T, fullfile(phenotype_dir, 'asrs_questionnaire.tsv'), ...
+        'FileType', 'text', 'Delimiter', '\t');
+    write_asrs_sidecar_json(phenotype_dir, false);
+end
+
+function write_digitspan_exp45(questionnaire_file, intervention_flag, phenotype_dir)
+    % Exp4/5: load T_digitspan_summary from Experiment_6_questionnaire.mat.
+    if ~isfile(questionnaire_file)
+        fprintf('Digitspan: questionnaire file not found: %s\n', questionnaire_file);
+        return;
+    end
+    q = load(questionnaire_file);
+    if ~isfield(q, 'T_digitspan_summary')
+        fprintf('Digitspan: T_digitspan_summary not found in %s\n', questionnaire_file);
+        return;
+    end
+    T = q.T_digitspan_summary;
+    T = T(T.intervention == intervention_flag, :);
 
     participant_id = arrayfun(@(x) sprintf('sub-%02d', x), T.participant_no, 'UniformOutput', false);
-    T2 = removevars(T, 'participant_no');
-    T2 = addvars(T2, participant_id, 'Before', 1, 'NewVariableNames', 'participant_id');
+    score          = T.digitspan_score;
+    weighted_score = T.digitspan_score_weighted;
+    T2 = table(participant_id, score, weighted_score);
 
-    writetable(T2, fullfile(phenotype_dir, 'asrs_questionnaire.tsv'), ...
+    writetable(T2, fullfile(phenotype_dir, 'digit_span_scores.tsv'), ...
         'FileType', 'text', 'Delimiter', '\t');
-    write_asrs_sidecar_json(phenotype_dir, has_per_question);
+
+    sidecar.participant_id.Description = 'unique participant identifier';
+    sidecar.score.Description = 'digit span forward score';
+    sidecar.weighted_score.Description = 'weighted digit span score';
+    write_json(fullfile(phenotype_dir, 'digit_span_scores.json'), sidecar);
 end
 
 function T = remap_asrs_columns(T)
@@ -584,13 +594,13 @@ function write_bidsignore(exp_output)
     fclose(fid);
 end
 
-function copy_readme(bbbd_source_dir, exp_output, experiment_no)
-    src = fullfile(bbbd_source_dir, sprintf('experiment%d', experiment_no), 'README.md');
+function copy_readme(exp_output, experiment_no)
+    src = fullfile('config', 'readmes', sprintf('experiment%d_README.md', experiment_no));
     dst = fullfile(exp_output, 'README.md');
     if isfile(src)
         copyfile(src, dst);
     else
-        fprintf('README.md not found at %s — skipping\n', src);
+        fprintf('README not found at %s — skipping\n', src);
     end
 end
 

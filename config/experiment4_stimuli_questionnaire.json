@@ -1,0 +1,270 @@
+{
+  "questions": {
+    "stim_01": {
+      "q1": "What are stars?",
+      "q2": "What happens when light from a distant source passes through a small opening?",
+      "q3": "How does a hexagon leave its imprint?",
+      "q4": "Why do we see stars as pointy?",
+      "q5": "How does a double slit leave its imprint?",
+      "q6": "Mark the INCORRECT sentence.",
+      "q7": "__________ is the slight bending of light as it passes around the edge of an object.",
+      "q8": "Diffraction bends longer wavelength _____ light more than _____ light.",
+      "q9": "What is the shape of stars in Hubble space telescope photos?",
+      "q10": "What is the diffraction imprint of a circle?",
+      "q11": "What causes “suture lines”?",
+      "q12": "How do scientists test that individual suture lines are the cause of subject-specific diffraction patterns?"
+    },
+    "stim_02": {
+      "q1": "Mark the option below that corresponds to a job that is NOT executed by the immune system.",
+      "q2": "Approximately how many body cells die fighting an infection?",
+      "q3": "What is the first cell type to intervene during a bacterial invasion?",
+      "q4": "What is the main job of the macrophage cell?",
+      "q5": "Approximately how long does it take bacteria to double its population in the bloodstream?",
+      "q6": "When T-cells are born they go through a very difficult and complicated training process.  How many of them survive?",
+      "q7": "Which of the following is INCORRECT about B-cells?",
+      "q8": "Mark the INCORRECT option about antibodies.",
+      "q9": "After the infection is wiped out most of the immune cells commit suicide. What are the cells that stay behind?",
+      "q10": "B cells are prevented from dying by:",
+      "q11": "Neutrophile cells commit suicide after __ in order to _______?",
+      "q12": "How long does it take for Dendritic cells to travel to the lymph nodes?"
+    },
+    "stim_03": {
+      "q1": "How many people have ever lived and to what is it more/less comparable?",
+      "q2": "Why is the total number of ancestors much smaller than the actual math tells us?",
+      "q3": "How much of the human DNA is coded into proteins?",
+      "q4": "How would you estimate how much time has passed since the beginning of humanity?",
+      "q5": "Do humans have a higher genetic variance than i.e. group of zebras that live together?",
+      "q6": "How big is the DNA?",
+      "q7": "What does SNPs stand for and how frequent do they happen?",
+      "q8": "What is the most adequate tool to detect how close or distant related we are from each other?",
+      "q9": "What is the most adequate tool to detect the geographical origin of your ancestors?",
+      "q10": "What is the most adequate tool to detect from which Homo Sapiens lineage we originated from?",
+      "q11": "From whom do you descend originally and how is it possible to find that out?",
+      "q12": "How can SNPs be useful?"
+    }
+  },
+  "answers": {
+    "stim_01": {
+      "q1": {
+        "a1": "Big hot round balls of plasma",
+        "a2": "Dead meteorites",
+        "a3": "Big hot round balls of dust",
+        "a4": "None of the options"
+      },
+      "q2": {
+        "a1": "All options are correct",
+        "a2": "The passing light picks up an imprint of that opening",
+        "a3": "Its waves interfere with each other",
+        "a4": "Its waves are bounced or bent slightly"
+      },
+      "q3": {
+        "a1": "Dashed six-pointed star",
+        "a2": "Dashed four-pointed star",
+        "a3": "Concentric rings",
+        "a4": "Series of dashed dashes"
+      },
+      "q4": {
+        "a1": "Because the imperfection of our eyes leave this imprint on light",
+        "a2": "Because stars are really pointy",
+        "a3": "Because they are bright objects in a dark night sky",
+        "a4": "None of the options are correct"
+      },
+      "q5": {
+        "a1": "Series of dashed dashes",
+        "a2": "Concentric rings",
+        "a3": "Dashed four-pointed star",
+        "a4": "Dashed six-pointed star"
+      },
+      "q6": {
+        "a1": "Only humans see pointy stars",
+        "a2": "The right and left eye of a person sees a slightly different star-like smear",
+        "a3": "Any particular eye sees the same star shape for every star",
+        "a4": "None of the options are incorrect."
+      },
+      "q7": {
+        "a1": "Diffraction",
+        "a2": "Scattering",
+        "a3": "Reflection",
+        "a4": "Refraction"
+      },
+      "q8": {
+        "a1": "red; blue",
+        "a2": "blue; yellow",
+        "a3": "green; red",
+        "a4": "green; yellow"
+      },
+      "q9": {
+        "a1": "Four pointed",
+        "a2": "Concentric rings",
+        "a3": "Six pointed",
+        "a4": "Series of dashes"
+      },
+      "q10": {
+        "a1": "Concentric rings",
+        "a2": "Dashed lines",
+        "a3": "4-pointed perpendicular lines",
+        "a4": "Dashed rings"
+      },
+      "q11": {
+        "a1": "Where the fibers that make up the eye’s lens meet",
+        "a2": "Health problems",
+        "a3": "Short-sightedness",
+        "a4": "All options are correct"
+      },
+      "q12": {
+        "a1": "Shine a laser into people’s eyes",
+        "a2": "Measure the pattern of suture lines in an individual’s eyes",
+        "a3": "Compare left and right eye shapes",
+        "a4": "Photograph the iris patterns and compare to star shapes"
+      }
+    },
+    "stim_02": {
+      "q1": {
+        "a1": "Produce fungi",
+        "a2": "Produce antibodies",
+        "a3": "Kill enemies",
+        "a4": "Communicate"
+      },
+      "q2": {
+        "a1": "Millions",
+        "a2": "Billions",
+        "a3": "Thousands",
+        "a4": "Hundreds"
+      },
+      "q3": {
+        "a1": "Guard cells / macrophage",
+        "a2": "Memory cells",
+        "a3": "B-cells",
+        "a4": "Dendritic cells"
+      },
+      "q4": {
+        "a1": "To kill enemies",
+        "a2": "To cause inflammation",
+        "a3": "To activate cells",
+        "a4": "All  options are correct"
+      },
+      "q5": {
+        "a1": "20 minutes",
+        "a2": "30 minutes",
+        "a3": "30 seconds",
+        "a4": "20 seconds"
+      },
+      "q6": {
+        "a1": "A quarter of them",
+        "a2": "Half of them",
+        "a3": "All of them",
+        "a4": "None of the options are correct"
+      },
+      "q7": {
+        "a1": "B-cells send chemical instructions to the rest of the immune system.",
+        "a2": "The B-cells are activated by the T-cells",
+        "a3": "The B-cells are considered a very powerful weapons factory",
+        "a4": "B-cells work so hard that they can literally die from exhaustion"
+      },
+      "q8": {
+        "a1": "They are produced by the dendritic cells",
+        "a2": "They are engineered to bind to the  surface of a specific intruder",
+        "a3": "There are different kinds of antibodies that have slightly different jobs",
+        "a4": "They flood the blood and saturate the body"
+      },
+      "q9": {
+        "a1": "Memory cells",
+        "a2": "Dendritic cells",
+        "a3": "Macrophage cells",
+        "a4": "All options are correct"
+      },
+      "q10": {
+        "a1": "T cells",
+        "a2": "Antibodies",
+        "a3": "Helper B-cells",
+        "a4": "Any white cell"
+      },
+      "q11": {
+        "a1": "5 days; prevent them from causing too much damage",
+        "a2": "5 hours; avoid wasting resources",
+        "a3": "The invading bacteria is defeated; prevent them from causing too much damage",
+        "a4": "4 days; avoid wasting resources"
+      },
+      "q12": {
+        "a1": "1 day",
+        "a2": "1 hour",
+        "a3": "12 hours",
+        "a4": "More than 2 days"
+      }
+    },
+    "stim_03": {
+      "q1": {
+        "a1": "107 billion people have ever lived, which is more than the number of stars present in the milky way",
+        "a2": "107 billion people have ever lived, which is more than the number of sand grains in Australia",
+        "a3": "100 billion people have ever lived, which is more than the number of atoms in a pound of gold",
+        "a4": "100 billion people have ever lived, which is more than the number of grams in the sun"
+      },
+      "q2": {
+        "a1": "Because of inbreeding",
+        "a2": "Because every human shares an ancestor around 3000 years ago",
+        "a3": "Because we all come from the same lineage, originated from Africa",
+        "a4": "Because humanity started with a big population"
+      },
+      "q3": {
+        "a1": "0.02",
+        "a2": "0.8",
+        "a3": "0.98",
+        "a4": "0.3"
+      },
+      "q4": {
+        "a1": "Locate and identify genetic changes in DNA i.e. mutations",
+        "a2": "Locate and identify changes in cells from the mother that are passed to every offspring",
+        "a3": "By doing whole genome sequencing",
+        "a4": "It's not possible because the human DNA has mutated too much"
+      },
+      "q5": {
+        "a1": "No, because the original population was small",
+        "a2": "Of course, just look at the different looks that people have, which is directly correlated to their genetics",
+        "a3": "Yes, because our chromosomes recombine during reproduction",
+        "a4": "No, because our chromosomes don't recombine during reproduction"
+      },
+      "q6": {
+        "a1": "46 chromosomes and 6 billion base pairs",
+        "a2": "46 chromosomes and 4 billion base pairs",
+        "a3": "24 chromosomes and 6 billion base pairs",
+        "a4": "24 Chromosomes and 4 billion base pairs"
+      },
+      "q7": {
+        "a1": "Single Nucleotide Polymorphism and 1/1000 base pairs",
+        "a2": "Single Nucleotide Polymorphism and 1/100 base pairs",
+        "a3": "Single Nuclear Polymorphism and 1/100 base pairs",
+        "a4": "Single Nuclear Polymorphism and 1/1000 base pairs"
+      },
+      "q8": {
+        "a1": "Genetic changes in general",
+        "a2": "Mutations",
+        "a3": "SNPs",
+        "a4": "Mitochondrial DNA"
+      },
+      "q9": {
+        "a1": "SNPs",
+        "a2": "Mutations",
+        "a3": "Genetically changes in general",
+        "a4": "Mitochondrial DNA"
+      },
+      "q10": {
+        "a1": "Mitochondrial DNA",
+        "a2": "SNPs",
+        "a3": "Mutations",
+        "a4": "Genetically changes in general"
+      },
+      "q11": {
+        "a1": "Mitochondrial Eve, because the mitochondria doesn't go through recombination when it's passed on to the offspring",
+        "a2": "Mitochondrial Eve, because the mitochondria goes through recombination when it's passed on to the offspring",
+        "a3": "Mitochondrial Eve, because the DNA doesn't go through recombination when it's passed on to the offspring",
+        "a4": "Eve, because the mitochondria doesn't go through recombination when it's passed on to the offspring"
+      },
+      "q12": {
+        "a1": "Be able to associate to a geographical location by comparing to other people",
+        "a2": "They can be used as a personal signature",
+        "a3": "They are genetically changes thereby we can use them to identify how long ago humanity started",
+        "a4": "Since they are localized in the mitochondrial DNA we can trace back to the original Homo Sapiens lineage"
+      }
+    }
+  }
+}
