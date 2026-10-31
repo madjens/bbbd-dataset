@@ -1,0 +1,20 @@
+{
+  "participant_id": {
+    "Description": "unique participant identifier"
+  },
+  "stimulus": {
+    "Description": "stimulus identifier"
+  },
+  "engaging": {
+    "Description": "self-reported engagement rating for the stimulus",
+    "Range": "1 to 7"
+  },
+  "enjoyable": {
+    "Description": "self-reported enjoyability rating for the stimulus",
+    "Range": "1 to 7"
+  },
+  "educational": {
+    "Description": "self-reported educational value rating for the stimulus",
+    "Range": "1 to 7"
+  }
+}

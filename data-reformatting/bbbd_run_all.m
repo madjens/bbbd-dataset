@@ -126,4 +126,20 @@ catch ME
     return;
 end
 
+try
+    disp('Running bbbd_questionnaires_123.m...');
+    run('matrix/bbbd_questionnaires_123.m');
+catch ME
+    disp(['Error in bbbd_questionnaires_123: ' ME.message]);
+    return;
+end
+
+try
+    disp('Running bbbd_questionnaires_45.m...');
+    run('matrix/bbbd_questionnaires_45.m');
+catch ME
+    disp(['Error in bbbd_questionnaires_45: ' ME.message]);
+    return;
+end
+
 disp('All scripts executed successfully.');

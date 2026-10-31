@@ -42,11 +42,19 @@ for experiment_no = 1:3
 
     %% phenotype: feedback, ASRS, digit span (exp2 and 3 only)
     if experiment_no >= 2
-        q_file = dir(fullfile(data_dir, sprintf('experiment_%d', experiment_no), sprintf('Experiment_%d_questionnaire.mat', experiment_no)));
-        if ~isempty(q_file)
-            q = load(fullfile(q_file(1).folder, q_file(1).name));
-            if isfield(q, 'questionnaireStimulusData')
-                write_stimuli_feedback(q.questionnaireStimulusData, [demo.no], phenotype_dir);
+        % EXP2: use static config file — questionnaireStimulusData in the raw MAT
+        % has only 29 participants; sub-16 and sub-28 data comes from
+        % T_stimuli_meta_questions (separate MAT) and is baked into config/.
+        % EXP3: derive from raw MAT (questionnaire MAT is complete for all 29 subs).
+        if experiment_no == 2
+            copy_static_phenotype_file('stimuli_feedback_meta', experiment_no, phenotype_dir);
+        else
+            q_file = dir(fullfile(data_dir, sprintf('experiment_%d', experiment_no), sprintf('Experiment_%d_questionnaire.mat', experiment_no)));
+            if ~isempty(q_file)
+                q = load(fullfile(q_file(1).folder, q_file(1).name));
+                if isfield(q, 'questionnaireStimulusData')
+                    write_stimuli_feedback(q.questionnaireStimulusData, [demo.no], phenotype_dir);
+                end
             end
         end
 
