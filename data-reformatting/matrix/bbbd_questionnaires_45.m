@@ -12,8 +12,9 @@ for exp_no = [4, 5]
     write_scores_from_questionnaire( ...
         fullfile('config', sprintf('experiment%d_stimuli_questionnaire.tsv', exp_no)), ...
         q_out, exp_no);
-    copy_config_file('asrs_questionnaire',  exp_no, q_out);
-    copy_config_file('digit_span_scores',   exp_no, q_out);
+    copy_config_file('asrs_questionnaire',    exp_no, q_out);
+    copy_config_file('digit_span_scores',     exp_no, q_out);
+    copy_config_file('stimuli_feedback_meta', exp_no, q_out);
 
     zip_name = fullfile(output_dir, sprintf('experiment%d', exp_no), ...
         sprintf('experiment%d_questionnaires.zip', exp_no));
