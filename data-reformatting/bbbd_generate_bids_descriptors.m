@@ -98,17 +98,10 @@ for exp_no = [4, 5]
     q_tsv = fullfile('config', sprintf('experiment%d_stimuli_questionnaire.tsv', exp_no));
     write_scores_from_questionnaire(q_tsv, phenotype_dir, exp_no);
 
-    % Feedback (using exp4 raw source)
-    q_file = dir(fullfile(data_dir, 'experiment_4', '*questionnaire*.mat'));
-    if ~isempty(q_file)
-        q = load(fullfile(q_file(1).folder, q_file(1).name));
-        if isfield(q, 'questionnaireStimulusData')
-            write_stimuli_feedback(q.questionnaireStimulusData, [demo.no], phenotype_dir);
-        end
-    end
-
-    copy_static_phenotype_file('asrs_questionnaire', exp_no, phenotype_dir);
-    copy_static_phenotype_file('digit_span_scores', exp_no, phenotype_dir);
+    % Feedback: experiment{4,5}_stimuli_feedback_meta.{tsv,json} in config/
+    copy_static_phenotype_file('stimuli_feedback_meta', exp_no, phenotype_dir);
+    copy_static_phenotype_file('asrs_questionnaire',    exp_no, phenotype_dir);
+    copy_static_phenotype_file('digit_span_scores',     exp_no, phenotype_dir);
 
     fprintf('Experiment %d descriptors written to %s\n', exp_no, exp_output);
 end
