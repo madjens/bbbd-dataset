@@ -1,0 +1,17 @@
+{
+  "questions": {
+    "watched_before": "I have already watched this video before I came here today",
+    "question_difficulty": "I found the questions for this video difficult",
+    "prior_knowledge": "I could have answered questions about this video without watching it",
+    "educational": "I learned something from this video"
+  },
+  "answers": {
+    "ans1": "Strongly Disagree",
+    "ans2": "Somewhat Disagree",
+    "ans3": "Disagree",
+    "ans4": "Neutral",
+    "ans5": "Agree",
+    "ans6": "Somewhat Agree",
+    "ans7": "Strongly Agree"
+  }
+}
